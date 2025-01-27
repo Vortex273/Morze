@@ -24,3 +24,6 @@ morse = {"a": ".-",
          "x": "-..-",
          "y": "-.--",
          "z": "--.."}
+
+def decode_from_morse(code):
+    pass
