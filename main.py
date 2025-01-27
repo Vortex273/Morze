@@ -1,4 +1,4 @@
-MorseCode = {"a": ".-",
+morse = {"a": ".-",
          "b": "-...",
          "c": "-.-.",
          "d": "-..",
@@ -24,9 +24,5 @@ MorseCode = {"a": ".-",
          "x": "-..-",
          "y": "-.--",
          "z": "--.."}
-def  encode_to_morse(text):
-    text = text.lower()
-    for i in text.split():
-        print(*[MorseCode[j] for j in i])
-
-
+for i in input().lower().split():
+    print(*[morse[j] for j in i])
