@@ -24,5 +24,3 @@ morse = {"a": ".-",
          "x": "-..-",
          "y": "-.--",
          "z": "--.."}
-for i in input().lower().split():
-    print(*[morse[j] for j in i])
