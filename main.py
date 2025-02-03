@@ -70,18 +70,9 @@ def decode_from_morse(code):
 def main():
     global text
     global code
-    print("Вы хотите закодировать или раскодировать текст?"
+    a = input("Вы хотите закодировать или раскодировать текст?"
           "\nЕсли закодировать введите:  1"
           "\nЕсли раскодировать введите: 2")
-    a = input()
-    if a == "1":
-        print("Теперь введите текст")
-        text = input()
-        encode_to_morse(text)
-    elif a == "2":
-        print("Теперь введите код")
-        code = input()
-        decode_from_morse(code)
-    else:
-        print("Введите 1 или 2")
-        return
+    print("Введите 1 или 2") if a not in ['1', '2'] else encode_to_morse(input("Теперь введите текст")) if a == "1" \
+        else decode_from_morse(input("Теперь введите код"))
+
